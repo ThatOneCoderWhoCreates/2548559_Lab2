@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thompson's Bakery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    article {
+      font-family: 'Georgia', serif;
+    }
+
+    .custom-link {
+      color: #b91c1c;
+      text-decoration: underline;
+    }
+
+    #cta-button {
+      background-color: #f59e0b;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    #cta-button:hover {
+      background-color: #d97706;
+    }
+
+    article:first-child {
+      border-top: 4px solid #fbbf24;
+    }
+
+    @media (max-width: 640px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      #cta-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="bg-yellow-50 text-gray-800">
+
+  <header class="bg-yellow-200 p-6">
+    <h1 class="text-3xl font-bold text-center text-brown-800">Thompson's Bakery</h1>
+    <nav class="mt-4 text-center">
+      <a href="menu.html" class="mx-4 hover:underline">Menu</a>
+      <a href="About-Us.html" class="mx-4 hover:underline">About Us</a>
+      <a href="#contact" class="mx-4 hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <section class="bg-yellow-100 py-16 text-center">
+    <h2 class="text-4xl font-bold mb-4">Freshly Baked Goodness Every Day</h2>
+    <p class="text-lg mb-6">From buttery croissants to warm apple pies, we bake with love and tradition.</p>
+    <button id="cta-button">Order Now</button>
+
+    <div class="mt-10 flex justify-center">
+      <svg width="120" height="20" viewBox="0 0 120 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 10 Q 60 0, 110 10 Q 60 20, 10 10 Z" fill="#fbbf24" opacity="0.6"/>
+      </svg>
+    </div>
+  </section>
+
+  <main class="p-10">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <article class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-semibold mb-2">Our Signature Croissant</h3>
+        <p class="mb-4">Flaky, golden, and rich with butter—our croissants are the heart of our bakery.</p>
+        <a href="#" class="custom-link">Explore More →</a>
+      </article>
+
+      <article class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-semibold mb-2">Seasonal Fruit Pies</h3>
+        <p class="mb-4">Made with handpicked fruits and a perfectly crisp crust, these pies are a seasonal delight.</p>
+        <a href="#" class="custom-link">Explore More →</a>
+      </article>
+    </section>
+
+    <section id="menu" class="mt-12">
+      <h2 class="text-3xl font-bold mb-6 text-center">Our Highest Selling Items</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <figure class="bg-white border border-yellow-300 rounded-lg p-4 shadow-md">
+          <img src="croissant.jpg" alt="Croissant" class="w-full h-auto rounded-md">
+          <figcaption class="text-center mt-2 font-semibold">Buttery Croissant</figcaption>
+        </figure>
+        <figure class="bg-white border border-yellow-300 rounded-lg p-4 shadow-md">
+          <img src="danish.webp" alt="Danish" class="w-full h-auto rounded-md">
+          <figcaption class="text-center mt-2 font-semibold">Cherry Danish</figcaption>
+        </figure>
+        <figure class="bg-white border border-yellow-300 rounded-lg p-4 shadow-md">
+          <img src="baguette.jpg" alt="Baguette" class="w-full h-auto rounded-md">
+          <figcaption class="text-center mt-2 font-semibold">Baguette</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-yellow-200 text-center p-6 mt-10">
+    <p>&copy; 2025 Thompson's Bakery. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
